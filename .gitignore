@@ -61,3 +61,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Collate Ignores
+collate-ios.xcodeproj/project.xcworkspace/contents.xcworkspacedata
