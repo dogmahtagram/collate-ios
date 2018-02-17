@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D594F17320315B3D009EF0C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D594F17220315B3D009EF0C4 /* AppDelegate.m */; };
-		D594F17620315B3E009EF0C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D594F17520315B3E009EF0C4 /* ViewController.m */; };
+		D52CCB812038A71B00DD88A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D52CCB802038A71B00DD88A4 /* libsqlite3.tbd */; };
+		D5427FA520380C4D002FDB0E /* Playground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5427FA320380C4D002FDB0E /* Playground.cpp */; };
+		D594F17320315B3D009EF0C4 /* MCOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D594F17220315B3D009EF0C4 /* MCOAppDelegate.m */; };
+		D594F17620315B3E009EF0C4 /* MCOViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D594F17520315B3E009EF0C4 /* MCOViewController.mm */; };
 		D594F17920315B3E009EF0C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D594F17720315B3E009EF0C4 /* Main.storyboard */; };
 		D594F17C20315B3E009EF0C4 /* collate_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D594F17A20315B3E009EF0C4 /* collate_ios.xcdatamodeld */; };
 		D594F17E20315B3E009EF0C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D594F17D20315B3E009EF0C4 /* Assets.xcassets */; };
@@ -36,11 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D52CCB802038A71B00DD88A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D5427FA320380C4D002FDB0E /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = "<group>"; };
+		D5427FA420380C4D002FDB0E /* Playground.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Playground.hpp; sourceTree = "<group>"; };
 		D594F16E20315B3D009EF0C4 /* collate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D594F17120315B3D009EF0C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D594F17220315B3D009EF0C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D594F17420315B3E009EF0C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D594F17520315B3E009EF0C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D594F17120315B3D009EF0C4 /* MCOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCOAppDelegate.h; sourceTree = "<group>"; };
+		D594F17220315B3D009EF0C4 /* MCOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCOAppDelegate.m; sourceTree = "<group>"; };
+		D594F17420315B3E009EF0C4 /* MCOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCOViewController.h; sourceTree = "<group>"; };
+		D594F17520315B3E009EF0C4 /* MCOViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOViewController.mm; sourceTree = "<group>"; };
 		D594F17820315B3E009EF0C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D594F17B20315B3E009EF0C4 /* collate_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = collate_ios.xcdatamodel; sourceTree = "<group>"; };
 		D594F17D20315B3E009EF0C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52CCB812038A71B00DD88A4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D52CCB7F2038A71B00DD88A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52CCB802038A71B00DD88A4 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D594F16520315B3D009EF0C4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 				D594F18C20315B3E009EF0C4 /* collate-iosTests */,
 				D594F19720315B3E009EF0C4 /* collate-iosUITests */,
 				D594F16F20315B3D009EF0C4 /* Products */,
+				D52CCB7F2038A71B00DD88A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +118,13 @@
 		D594F17020315B3D009EF0C4 /* collate-ios */ = {
 			isa = PBXGroup;
 			children = (
-				D594F17120315B3D009EF0C4 /* AppDelegate.h */,
-				D594F17220315B3D009EF0C4 /* AppDelegate.m */,
-				D594F17420315B3E009EF0C4 /* ViewController.h */,
-				D594F17520315B3E009EF0C4 /* ViewController.m */,
+				D594F17120315B3D009EF0C4 /* MCOAppDelegate.h */,
+				D594F17220315B3D009EF0C4 /* MCOAppDelegate.m */,
+				D594F17420315B3E009EF0C4 /* MCOViewController.h */,
+				D594F17520315B3E009EF0C4 /* MCOViewController.mm */,
 				D594F17720315B3E009EF0C4 /* Main.storyboard */,
+				D5427FA320380C4D002FDB0E /* Playground.cpp */,
+				D5427FA420380C4D002FDB0E /* Playground.hpp */,
 				D594F17D20315B3E009EF0C4 /* Assets.xcassets */,
 				D594F17F20315B3E009EF0C4 /* LaunchScreen.storyboard */,
 				D594F18220315B3E009EF0C4 /* Info.plist */,
@@ -268,10 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D594F17620315B3E009EF0C4 /* ViewController.m in Sources */,
+				D594F17620315B3E009EF0C4 /* MCOViewController.mm in Sources */,
 				D594F17C20315B3E009EF0C4 /* collate_ios.xcdatamodeld in Sources */,
 				D594F18420315B3E009EF0C4 /* main.m in Sources */,
-				D594F17320315B3D009EF0C4 /* AppDelegate.m in Sources */,
+				D5427FA520380C4D002FDB0E /* Playground.cpp in Sources */,
+				D594F17320315B3D009EF0C4 /* MCOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

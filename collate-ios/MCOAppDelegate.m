@@ -6,7 +6,7 @@
 //  Copyright © 2018 moist. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MCOAppDelegate.h"
 
 @interface AppDelegate ()
 

@@ -6,10 +6,14 @@
 //  Copyright © 2018 moist. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MCOViewController.h"
+#import "Playground.hpp"
 
 @interface ViewController ()
-
+{
+    Playground _playground;
+    __weak IBOutlet UIButton *_testibleButton;
+}
 @end
 
 @implementation ViewController
@@ -25,5 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)RunTestible
+{
+    _playground.InitializeSql();
+    NSString* newTitle = [NSString stringWithCString:_playground.Testible().c_str() encoding:[NSString defaultCStringEncoding]];
+    
+    [_testibleButton setTitle:newTitle forState:UIControlStateNormal];
+}
 
 @end
